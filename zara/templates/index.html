@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>BIENVENIDO A ZARA.COM</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- las tres líneas siguientes son un arreglo para obtener elementos semánticos de HTML5 que funcionan en versiones de Internet Explorer antiguas-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Aquí empieza el encabezado principal que se mantendrá en todas las páginas de nuestro sitio web -->
+
+    <header>
+      <h1>ZARA.COM</h1>
+
+      <!-- Aunque no es obligatorio, es una práctica común incluir el apartado menú de navegación dentro del encabezado de la página -->
+
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nuestro equipo</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <!-- Un formulario de búsqueda es una forma no-lineal de hacer búsquedas en un sitio web. -->
+
+        <form>
+          <input type="search" name="q" placeholder="Buscar solicitud">
+          <input type="submit" value="¡Vamos!">
+        </form>
+      </nav>
+    </header>
+
+    <!-- Aquí empieza el contenido principal de nuestra página -->
+    <main>
+
+      <!-- Incluimos un artículo -->
+      <article>
+        <h2>Article heading</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+
+        <h3>subsection</h3>
+
+        <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
+
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+
+        <h3>Otra subsección</h3>
+
+        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+      </article>
+
+      <!-- el contenido lateral también puede estar anidado en el apartado principal (main) -->
+      <aside>
+        <h2>Relacionado</h2>
+
+        <ul>
+          <li><a href="#">Oh, me gusta estar cerca de la costa</a></li>
+          <li><a href="#">Oh, me gusta estar cerca del mar</a></li>
+          <li><a href="#">Aunque en el Norte de Inglaterra</a></li>
+          <li><a href="#">Nunca deja de llover</a></li>
+          <li><a href="#">Oh, bueno...</a></li>
+        </ul>
+      </aside>
+
+        <label for="file-upload" class="custom-file-upload">
+               Subir fotografía
+        </label><br><br>
+        <input id="file-upload" type="file"/>
+
+        <button type="button"onclick="location.href='{% url 'aceptar' %}'"> Aceptar </button><br><br>
+
+    </main>
+
+    <!-- Y aquí está el pie de página principal que utilizaremos en todas las páginas de nuestro sitio web -->
+
+    <footer>
+      <p>Proyecto realizado por Javier Gil-Terrón, Carlos Romero, Miguel Angel Rubio y Nicolás Saldaña.</p>
+    </footer>
+
+  </body>
+</html>
