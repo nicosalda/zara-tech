@@ -19,14 +19,16 @@
     </head>
     <body>
         <div class="page-header">
-        <h1>ZARA</h1>
+            <h1>ZARA</h1>
         </div>
 
         <label for="file-upload" class="custom-file-upload">
-                   Subir fotografía
-         </label><br><br>
-         <input id="file-upload" type="file"/><br><br>
-
-         <button type="button"onclick="location.href='{% url 'aceptar' %}'"> Aceptar </button><br><br>
+            Subir fotografía
+        </label>
+        <br><br>
+        <form action="/foto" method="post" id="form" enctype="multipart/form-data">{% csrf_token %}
+            {{ form.file }}
+        </form>
+        <button type="submit" form="form"> Buscar Similares </button>
     </body>
 </html>
