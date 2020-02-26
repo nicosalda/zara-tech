@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ZARA.COM</title>
-</head>
-<body>
+<html>
+    <head>
+        <title>ZARA</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <style>
+        body {
+            padding-left: 50px;
+            padding-right: 50px;
+            color: #000000;
+            background: #B6B6B6;
+        }
+        h1 {
+            color: #000000;
+            }
 
-     <header>
-      <h1>ZARA.COM</h1>
-     </header>
+        </style>
+    </head>
+    <body>
+        <div class="page-header">
+        <h1>ZARA</h1>
+        </div>
 
-     <label for="file-upload" class="custom-file-upload">
-               Subir fotografía
-     </label><br><br>
-     <input id="file-upload" type="file"/><br><br>
+        <label for="file-upload" class="custom-file-upload">
+                   Subir fotografía
+         </label><br><br>
+         <input id="file-upload" type="file"/><br><br>
 
-     <button type="button"onclick="location.href='{% url 'aceptar' %}'"> Aceptar </button><br><br>
-
-</body>
+         <button type="button"onclick="location.href='{% url 'aceptar' %}'"> Aceptar </button><br><br>
+    </body>
 </html>
