@@ -4,8 +4,8 @@ from zara.models.ResNet50 import ResNet50
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
 # Model CONSTANTS
-IMG_HEIGHT = 56
-IMG_WIDTH = 56
+IMG_HEIGHT = 64
+IMG_WIDTH = 64
 TARGET_SIZE = (IMG_WIDTH, IMG_HEIGHT)
 # Number of current dress types available
 NUM_CLASSES = 13

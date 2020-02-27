@@ -20,6 +20,9 @@ def foto(request):
             # Buscamos las imagenes similares
             type_of_clothing = handle_photo(request.FILES['file'])
             # Redirigimos al tipo de ropa que hemos detectado
-            return redirect(f'/{type_of_clothing}')
+            return redirect(f'similar/{type_of_clothing}/')
     # Si alguno de los pasos ha fallado redirigimos a la página principal
     return redirect('/')
+
+def similar(request, dress_type):
+    return render(request, 'resultados.html', {'dress_type': dress_type})

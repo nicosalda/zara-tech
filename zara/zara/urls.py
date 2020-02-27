@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url
+from django.urls import path
 from . import views
 
 
@@ -22,4 +23,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.indice),
     url(r'^foto', views.foto, name='foto'),
+    path('similar/<str:dress_type>/', views.similar, name='get-dress-type'),
 ]
