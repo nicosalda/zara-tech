@@ -36,19 +36,31 @@ Para poder ejecutar en local tenemos que tener instalados los siguientes paquete
 Tensorflow
 
 ```
-pip intsall tensorflow
+pip install tensorflow
 ```
 Django
 ```
-pip intsall django
+pip install django
 ```
 Matplotlib
 ```
-pip intsall matplotlib
+pip install matplotlib
 ```
 Pillow
 ```
-pip intsall pillow
+pip install pillow
+```
+
+Si queremos entrenar la red basta con irse a la carpeta training configurar las constantes del script y lanzarlo. 
+```bash
+cd training
+python type_model.py
+```
+
+Si lo que necesitamos es el servidor local tenemos que entrar en la carpera zara y luego ejecutar el servidor.
+```bash
+cd zara
+python manage.py runserver
 ```
 
 # Estructura del Repositorio
